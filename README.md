@@ -2,4 +2,5 @@ emby/jellyfin刮削器metatube链接跳转到javdb搜索番号的代理软件正
 ⚠️需要先自行填写主机名
 引用raw
 https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/metatube2javdb.plugin
+
 [🎈loon直接安装](loon://import?plugin=https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/metatube2javdb.plugin)
