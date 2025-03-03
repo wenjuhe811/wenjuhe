@@ -1,3 +1,10 @@
+#!name=metatube2javdb
+#!desc=提取metatube刮削器元数据网页的番号到javdb搜索
+#!icon= https://metatube-community.github.io/images/logo-vertical-dark.png
+#!homepage= https://t.me/Pleasure_list1
+#!author=奇妙进化小河马🦛 tg@wenjuhe
+[Mitm]
+#隐私问题主机名需自行填写
 [Rewrite]
 ^https?:\/\/(?:[a-zA-Z0-9.-]+|(?:\d{1,3}\.){3}\d{1,3})(?::\d+)?\/\?redirect=(?:.*:)?([a-zA-Z]{2,})(?:00|-)(\d+)$ 307 https://javdb.com/search?q=$1-$2
 ^https?:\/\/www\.avbase\.net/works/(?:[^:]+:)?([^&]+)$ 307 https://javdb.com/search?q=\U$1
