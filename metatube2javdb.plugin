@@ -1,5 +1,5 @@
 #!name=metatube2javdb
-#!desc=提取metatube刮削器元数据网页的番号到javdb搜索。⚠️隐私考虑请手动填主机名，下方代理指向的策略选择你的日本策略组/节点才可预告片播放，而javdb.com不允许使用日本节点
+#!desc=提取metatube刮削器元数据网页的番号到javdb搜索。⚠️隐私考虑请手动填主机名(内网ip/媒体服域名均可)，依赖于mitm/重写功能提前配置好代理软件证书。下方代理指向的策略选择你的日本策略组/节点才可预告片播放，而javdb.com不允许使用日本节点
 #!openUrl=https://javdb.com/
 #!icon= https://metatube-community.github.io/images/logo-vertical-dark.png
 #!homepage=https://github.com/wenjuhe811/wenjuhe/blob/main/README.md
