@@ -6,8 +6,9 @@
 #!author=奇妙进化小河马🦛[https://t.me/wenjuhe]
 [Rule]
 DOMAIN,cc3001.dmm.co.jp,PROXY
+[MITM]
+hostname=www.jav321.com,www.avbase.net
 [Rewrite]
 ^https?:\/\/www\.avbase\.net/works/(?:[^:]+:)?([^&]+)$ 307 https://javdb.com/search?q=$1
 ^https?:\/\/www\.jav321\.com/video/.*?([a-zA-Z]+)00(\d*)([^&]*)$ 307 https://javdb.com/search?q=$1-$2
-[MITM]
-hostname=www.jav321.com,www.avbase.net
+^https?:\/\/www\.jav321\.com/video\/.*?([a-zA-Z]+)0*(\d+)$ 307 https://javdb.com/search?q=$1-$2
