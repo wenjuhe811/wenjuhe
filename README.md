@@ -4,10 +4,10 @@ emby/jellyfin刮削器metatube链接跳转到javdb搜索番号的代理软件正
 
 https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/metatube2javdb.plugin
 
-🎈loon复制整段打开直接安装⬇️ 原生测试
+🎈Loon 直接安装⬇️ 原生测试
 
-loon://import?plugin=https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/metatube2javdb.plugin
+https://www.nsloon.com/openloon/import?plugin=https%3A%2F%2Fraw.githubusercontent.com%2Fwenjuhe811%2Fwenjuhe%2Frefs%2Fheads%2Fmain%2Fmetatube2javdb.plugin
 
-🚀shadowrocket由script hub转换
+🚀Shadowrocket 由[Script Hub](https://scripthub.vercel.app/)转换
 
 http://script.hub/file/_start_/https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/metatube2javdb.plugin/_end_/metatube2javdb.sgmodule?type=loon-plugin&target=shadowrocket-module&del=true
