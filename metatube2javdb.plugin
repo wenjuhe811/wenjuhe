@@ -1,7 +1,7 @@
 #!name=metatube2javdb
 #!desc=提取metatube刮削器元数据链接的番号到javdb搜索。下方[代理指向的策略]选择你的日本策略组/节点才可预告片播放，而javdb.com版权原因不允许使用日本节点。问题反馈点下方作者✈️
 #!openUrl=https://javdb.com/
-#!icon= https://metatube-community.github.io/images/logo-vertical-dark.png
+#!icon=https://c0.jdbstatic.com/images/logo_120x120.png
 #!homepage=https://github.com/wenjuhe811/wenjuhe/blob/main/README.md
 #!author=奇妙进化小河马🦛[https://t.me/wenjuhe]
 [Rule]
