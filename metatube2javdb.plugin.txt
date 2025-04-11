@@ -5,7 +5,8 @@
 #!homepage=https://github.com/wenjuhe811/wenjuhe/blob/main/README.md
 #!author=奇妙进化小河马🦛[https://t.me/wenjuhe]
 [Rule]
-DOMAIN,cc3001.dmm.co.jp,PROXY
+DOMAIN-SUFFIX,dmm.co.jp,PROXY
+DOMAIN-SUFFIX,dmm.com,PROXY
 [MITM]
 hostname=www.jav321.com,www.avbase.net,metatube.*
 [Rewrite]
