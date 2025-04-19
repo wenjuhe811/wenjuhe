@@ -1,6 +1,6 @@
 #!name=JavDB搜索
-#!desc=1️⃣提取metatube刮削器元数据链接的番号到JavDB搜索。2️⃣Google搜索番号(中间连字符"-"要加)直接跳转JavDB搜索。🎈下方[代理指向的策略]选择你的日本策略组/节点才可播放预告片，而javdb.com版权原因不允许使用日本节点。✈️问题反馈点下方作者🦛
-#!openUrl =https://javdb.com/
+#!desc=1️⃣提取Jellyfin/Emby媒体库视频下方MetaTube刮削器元数据链接的番号跳转到JavDB搜索。2️⃣Google搜索番号(中间连字符"-"要加)跳转到JavDB搜索。🎈下方[代理指向的策略]选择你的日本策略组/节点才可播放预告片，而javdb.com版权原因不允许使用日本节点。✈️问题反馈点下方作者🦛
+#!openUrl =https://javdb.com/  
 #!icon=https://c0.jdbstatic.com/images/logo_120x120.png
 #!homepage=https://github.com/wenjuhe811/wenjuhe/blob/main/README.md
 #!author=奇妙进化小河马🦛[https://t.me/wenjuhe]
