@@ -10,7 +10,7 @@
 
 https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/javdb-search.plugin.txt
 
-[🎈Loon 点击安装 原生测试](loon://import?plugin=https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/javdb-search.plugin.txt)  
+[🎈Loon 复制安装 原生测试](https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/javdb-search.plugin.txt)  
 
 [🚀Shadowrocket 复制链接](http://script.hub/file/_start_/https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/javdb-search.plugin.txt/_end_/javdb-search.sgmodule?type=loon-plugin&target=shadowrocket-module&del=true&jqEnabled=true)
 由[Script Hub](https://scripthub.vercel.app/)转换    
