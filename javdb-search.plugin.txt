@@ -1,5 +1,5 @@
 #!name=🔞JavDB快速搜索
-#!desc=1️⃣提取Jellyfin/Emby媒体库视频下方MetaTube刮削器元数据链接的番号跳转到JavDB搜索。2️⃣Google搜索番号跳转到JavDB搜索，前缀fh/jav 番号(中间有个空格，番号加不加连字符-均可），唤起位置不限于各浏览器默认搜索引擎，Spotlight聚焦搜索。🎈下方[代理指向的策略]选择你的日本策略组/节点才可播放预告片，而javdb.com版权原因不允许使用日本节点。✈️问题反馈点下方作者🦛
+#!desc=1️⃣提取Jellyfin/Emby媒体库视频下方MetaTube刮削器元数据链接的番号跳转到JavDB搜索。2️⃣Google搜索“前缀空格番号”跳转到JavDB搜索，前缀fh/jav二选一，空格和番号中的连字符-有无均可，唤起位置不限于各浏览器默认搜索引擎/Spotlight聚焦搜索。🎈下方[代理指向的策略]选择你的日本策略组/节点才可播放预告片，而javdb.com版权原因不允许使用日本节点。✈️问题反馈点下方作者🦛
 #!openUrl =https://javdb.com/
 #!icon=https://c0.jdbstatic.com/images/logo_120x120.png
 #!homepage=https://github.com/wenjuhe811/wenjuhe/blob/main/README.md
@@ -10,7 +10,7 @@ DOMAIN-SUFFIX,dmm.com,PROXY
 [MITM]
 hostname=www.jav321.com,www.avbase.net,metatube.*,www.google.cn,www.google.com
 [Rewrite]
-^https?:\/\/www\.google\.(?:cn|com)/search\?q=(?:jav|fh)(?:\+|%20)([a-zA-Z]+)-?(\d{2,}).*$ 307 https://javdb.com/search?q=$1-$2
+^https?:\/\/www\.google\.(?:cn|com)/search\?q=(?:jav|fh)(?:\+|%20)?([a-zA-Z]+)-?(\d{2,}).*$ 307 https://javdb.com/search?q=$1-$2
 ^https:\/\/metatube.*?/\?redirect=.*?(?:%3A)?([a-zA-Z]+)(?:00|-)(\d{2,})$ 307 https://javdb.com/search?q=$1-$2
 ^https?:\/\/www\.avbase\.net/works/(?:[^:]+:)?([^&]+)$ 307 https://javdb.com/search?q=$1
 ^https?:\/\/www\.jav321\.com/video/.*?([a-zA-Z]+)0{0,2}(\d*)([^&]*)$ 307 https://javdb.com/search?q=$1-$2
