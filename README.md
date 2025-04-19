@@ -2,7 +2,7 @@
 
 1️⃣提取Jellyfin/Emby媒体库视频下方MetaTube刮削器元数据链接的番号跳转到JavDB搜索。
 
-2️⃣Google搜索番号(中间连字符"-"要加)跳转到JavDB搜索。
+2️⃣Google搜索番号跳转到JavDB搜索，前缀fh/jav 番号(中间有个空格，番号加不加连字符-均可），唤起位置不限于各浏览器默认搜索引擎，Siri建议。
 
 🔞⚠️效果演示在[tg这里](https://t.me/Pleasure_list1/1038)    
 
