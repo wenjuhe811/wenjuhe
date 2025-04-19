@@ -1,6 +1,6 @@
-#!name=metatube2javdb
-#!desc=提取metatube刮削器元数据链接的番号到javdb搜索。下方[代理指向的策略]选择你的日本策略组/节点才可预告片播放，而javdb.com版权原因不允许使用日本节点。问题反馈点下方作者✈️
-#!openUrl=https://javdb.com/
+#!name=JavDB搜索
+#!desc=1️⃣提取metatube刮削器元数据链接的番号到JavDB搜索。2️⃣Google搜索番号(中间连字符"-"要加)直接跳转JavDB搜索。🎈下方[代理指向的策略]选择你的日本策略组/节点才可播放预告片，而javdb.com版权原因不允许使用日本节点。✈️问题反馈点下方作者🦛
+#!openUrl =https://javdb.com/
 #!icon=https://c0.jdbstatic.com/images/logo_120x120.png
 #!homepage=https://github.com/wenjuhe811/wenjuhe/blob/main/README.md
 #!author=奇妙进化小河马🦛[https://t.me/wenjuhe]
@@ -8,8 +8,9 @@
 DOMAIN-SUFFIX,dmm.co.jp,PROXY
 DOMAIN-SUFFIX,dmm.com,PROXY
 [MITM]
-hostname=www.jav321.com,www.avbase.net,metatube.*
+hostname=www.jav321.com,www.avbase.net,metatube.*,www.google.cn,www.google.com
 [Rewrite]
+^https?:\/\/www\.google\.(?:cn|com)/search\?q=([a-zA-Z]+)-(\d{2,}).*$ 307 https://javdb.com/search?q=$1-$2
 ^https:\/\/metatube.*?/\?redirect=.*?(?:%3A)?([a-zA-Z]+)(?:00|-)(\d{2,})$ 307 https://javdb.com/search?q=$1-$2
 ^https?:\/\/www\.avbase\.net/works/(?:[^:]+:)?([^&]+)$ 307 https://javdb.com/search?q=$1
 ^https?:\/\/www\.jav321\.com/video/.*?([a-zA-Z]+)0{0,2}(\d*)([^&]*)$ 307 https://javdb.com/search?q=$1-$2
