@@ -6,9 +6,7 @@
 
 🔞⚠️效果演示在[tg这里](https://t.me/Pleasure_list1/1038)    
 
-🎈Loon原生测试 引用raw 
-
-https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/javdb-search.plugin.txt
+[🎈Loon原生测试 点击安装](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/javdb-search-plus.plugin.txt)
 
 [🚀Shadowrocket 复制链接](http://script.hub/file/_start_/https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/javdb-search.plugin.txt/_end_/javdb-search.sgmodule?type=loon-plugin&target=shadowrocket-module&del=true&jqEnabled=true)
 由[Script Hub](https://scripthub.vercel.app/)转换    
