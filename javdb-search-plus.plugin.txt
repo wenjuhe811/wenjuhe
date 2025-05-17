@@ -1,5 +1,5 @@
 #!name=🔞JavDB 开启框选文字菜单'搜索网页'搜番号
-#!desc=⚠️使用完记得点插件图标关闭。\n✨主要方便于文字框选菜单中的“搜索网页”调用Safari默认引擎搜索，其中”查找”页最下面也有搜索网页的选项，会使所有“字母数字”“字母空格数字”的Google/百度搜索跳转到JavDB搜索而无需基础插件中的前缀。\n❗为避免误伤正常搜索到像番号的关键词，可加前缀'g'和'bd'分别跳转到GoogleHK和百度搜索。\n✈️问题反馈点下方作者🦛
+#!desc=⚠️使用完记得点插件图标关闭。\n✨主要方便于文字框选菜单中的“搜索网页”调用Safari默认引擎搜索，其中”查找”页最下面也有搜索网页的选项，会使所有“字母数字”“字母-数字”的Google/百度搜索跳转到JavDB搜索而无需基础插件中的前缀。\n❗为避免误伤正常搜索到像番号的关键词，可加前缀'g'或'bd'和空格分别跳转到GoogleHK和百度搜索。\n✈️问题反馈点下方作者🦛
 #!openUrl =https://javdb.com/
 #!icon=https://c0.jdbstatic.com/images/logo_120x120.png
 #!homepage=https://github.com/wenjuhe811/wenjuhe/blob/main/README.md
@@ -7,9 +7,9 @@
 [MITM]
 hostname=www.google.cn,www.google.com,*.baidu.com
 [Rewrite]
-^https?:\/\/www\.google\.(?:cn|com)/search\?q=g(?:\+|%20)?([^&]+).*$ 307 https://www.google.com.hk/search?q=$1
-^https?:\/\/www\.google\.(?:cn|com)/search\?q=bd(?:\+|%20)?([^&]+).*$ 307 https://www.baidu.com/s?wd=$1
-^https?:\/\/(?:www|m)\.baidu\.com\/s\?.*?word=g(?:\+|%20)?([^&]+).*$ 307 https://www.google.com.hk/search?q=$1
-^https?:\/\/(?:www|m)\.baidu\.com\/s\?.*?word=bd(?:\+|%20)?([^&]+).*$ 307 https://www.baidu.com/s?wd=$1
+^https?:\/\/www\.google\.(?:cn|com)/search\?q=g(?:\+|%20)([^&]+).*$ 307 https://www.google.com.hk/search?q=$1
+^https?:\/\/www\.google\.(?:cn|com)/search\?q=bd(?:\+|%20)([^&]+).*$ 307 https://www.baidu.com/s?wd=$1
+^https?:\/\/(?:www|m)\.baidu\.com\/s\?.*?word=g(?:\+|%20)([^&]+).*$ 307 https://www.google.com.hk/search?q=$1
+^https?:\/\/(?:www|m)\.baidu\.com\/s\?.*?word=bd(?:\+|%20)([^&]+).*$ 307 https://www.baidu.com/s?wd=$1
 ^https?:\/\/www\.google\.(?:cn|com)/search\?q=([a-zA-Z]+)-?(\d{2,}).*$ 307 https://javdb.com/search?q=$1-$2
 ^https?:\/\/(?:www|m)\.baidu\.com\/s\?.*?word=([a-zA-Z]+)-?(\d{2,}).*$ 307 https://javdb.com/search?q=$1-$2
