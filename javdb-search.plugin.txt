@@ -11,6 +11,7 @@ DOMAIN-SUFFIX,dmm.com,PROXY
 hostname=www.jav321.com,www.avbase.net,metatube.*,www.google.cn,www.google.com,*.baidu.com,www.dmm.co.jp
 [Rewrite]
 ^https?:\/\/metatube.*?\/\?redirect=.*?([a-zA-Z]+)(?:00|-)?(\d{3})$ 307 https://javdb.com/search?q=$1-$2
+^https?:\/\/www.javbus.com/ja/(.*)$ 307 https://javdb.com/search?q=$1
 #^https?:\/\/metatube.*?\/\?redirect=.*%3A([a-zA-Z]+)(?:00|-)?(\d{2,}).* 307 https://javdb.com/search?q=$1-$2
 #^https?:\/\/metatube.*?\/\?redirect=(?:(?!DUGA).)*?(?:%3A)?1?([a-zA-Z]+)(?:00|-)?(\d{2,}).* 307 https://javdb.com/search?q=$1-$2
 #^https:\/\/metatube.*?/\?redirect=JAV321:1?([a-zA-Z]+)(?:00|-)?(\d{2,}).*?$ 307 https://javdb.com/search?q=$1-$2
