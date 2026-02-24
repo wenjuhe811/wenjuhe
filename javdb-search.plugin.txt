@@ -1,14 +1,14 @@
 #!name=🔞JavDB快速搜索
-#!desc=1️⃣提取Jellyfin/Emby媒体库视频下方MetaTube刮削器元数据链接的番号跳转到JavDB搜索。\n2️⃣Google/百度搜索“前缀空格番号”跳转到JavDB搜索。\n前缀fh/jav二选一，空格和番号中的连字符-有无均可，唤起位置不限于各浏览器搜索框/Spotlight聚焦搜索建议Safari。\n🎈下方作者中“🔗附加插件”可临时开启框选文字菜单中的搜索网页。\n🎈下方[代理指向的策略]选择你的日本策略组/节点才可播放预告片，而javdb.com版权原因不允许使用日本节点。\n🌐可搭配油猴/Stay(iOS可用)脚本“javdb自动点击想看”，“JavDB Exporter(导出 想看、看过、清单)”\n✈️问题反馈点下方作者🦛
+#!desc=1️⃣提取Jellyfin/Emby媒体库视频下方MetaTube刮削器元数据链接的番号跳转到JavDB搜索。\n2️⃣Google/百度/kagi搜索“前缀空格番号”跳转到JavDB搜索。\n前缀fh/jav二选一，空格和番号中的连字符-有无均可，唤起位置不限于各浏览器搜索框/Spotlight聚焦搜索建议Safari。\n🎈下方作者中“🔗附加插件”可临时开启框选文字菜单中的搜索网页。\n🎈下方[代理指向的策略]选择你的日本策略组/节点才可播放预告片，而javdb.com版权原因不允许使用日本节点。\n🌐可搭配油猴/Stay(iOS可用)脚本“javdb自动点击想看”，“JavDB Exporter(导出 想看、看过、清单)”\n✈️问题反馈点下方作者🦛
 #!openUrl =https://javdb.com/
 #!icon=https://c0.jdbstatic.com/images/logo_120x120.png
 #!homepage=https://github.com/wenjuhe811/wenjuhe/blob/main/README.md
-#!author=奇妙进化小河马🦛[https://t.me/wenjuhe],🔞附加插件[https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/javdb-search-plus.plugin.txt],javdb自动点击想看[https://sleazyfork.org/zh-CN/scripts/485427-javdb%E8%87%AA%E5%8A%A8%E7%82%B9%E5%87%BB%E6%83%B3%E7%9C%8B],JavDB Exporter[https://sleazyfork.org/zh-CN/scripts/467309-javdb-exporter]
+#!author=奇妙进化小河马🦛[https://t.me/wenjuhe],🔞附加插件[https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/javdb-search-plus.plugin.txt],javdb自动点击想看[https://sleazyfork.org/zh-CN/scripts/485427-javdb%E8%87%AA%E5%8A%A8%E7%82%B9%E5%87%BB%E6%83%B3%E7%9C%8B], JavDB Exporter[https://sleazyfork.org/zh-CN/scripts/467309-javdb-exporter], 🐒tampermonkey油猴插件版本[https://raw.githubusercontent.com/wenjuhe811/wenjuhe/refs/heads/main/javdb-search.user.js]
 [Rule]
 DOMAIN-SUFFIX,dmm.co.jp,PROXY
 DOMAIN-SUFFIX,dmm.com,PROXY
 [MITM]
-hostname=www.jav321.com,www.avbase.net,metatube.*,www.google.cn,www.google.com,*.baidu.com,www.dmm.co.jp
+hostname=www.jav321.com,www.avbase.net,metatube.*,www.google.cn,www.google.com,*.baidu.com,www.dmm.co.jp,kagi.com
 [Rewrite]
 ^https?:\/\/metatube.*?\/\?redirect=.*?([a-zA-Z]+)(?:00|-)?(\d{3})$ 307 https://javdb.com/search?q=$1-$2
 ^https?:\/\/www.javbus.com/ja/(.*)$ 307 https://javdb.com/search?q=$1
@@ -20,3 +20,4 @@ hostname=www.jav321.com,www.avbase.net,metatube.*,www.google.cn,www.google.com,*
 ^https?:\/\/www\.avbase\.net/works/(?:[^:]+:)?([^&]+)$ 307 https://javdb.com/search?q=$1
 ^https?:\/\/www\.jav321\.com/video/.*?([a-zA-Z]+)0{0,2}(\d*)([^&]*)$ 307 https://javdb.com/search?q=$1-$2
 ^https?:\/\/www\.dmm\.co\.jp\/.*?cid=1?([a-zA-Z]+)(?:00|-)?(\d{2,}).*?$ 307 https://javdb.com/search?q=$1-$2
+^https?:\/\/kagi\.com\/search\?q=(?:jav|fh)(?:\+|%20)?([^&]+).+ 307 https://javdb.com/search?q=$1-$2
