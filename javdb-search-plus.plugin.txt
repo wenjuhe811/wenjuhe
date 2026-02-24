@@ -11,5 +11,7 @@ hostname=www.google.cn,www.google.com,*.baidu.com
 ^https?:\/\/www\.google\.(?:cn|com)/search\?q=bd(?:\+|%20)([^&]+).*$ 307 https://www.baidu.com/s?wd=$1
 ^https?:\/\/(?:www|m)\.baidu\.com\/s\?.*?word=g(?:\+|%20)([^&]+).*$ 307 https://www.google.com.hk/search?q=$1
 ^https?:\/\/(?:www|m)\.baidu\.com\/s\?.*?word=bd(?:\+|%20)([^&]+).*$ 307 https://www.baidu.com/s?wd=$1
-^https?:\/\/www\.google\.(?:cn|com)/search\?q=([a-zA-Z]+)-?(\d{2,}).*$ 307 https://javdb.com/search?q=$1-$2
+
+^https?:\/\/www\.google\.(?:cn|com)/search\?q=([a-zA-Z]+)-?(\d{2,}).*$ 307 https://javdb.com/search?q=$1-$2q=$1-$2
 ^https?:\/\/(?:www|m)\.baidu\.com\/s\?.*?word=([a-zA-Z]+)-?(\d{2,}).*$ 307 https://javdb.com/search?q=$1-$2
+^https?:\/\/kagi\.com\/search\?q=([a-zA-Z]+)-?(\d{2,}).*$ 307 https://javdb.com/search?q=$1-$2
